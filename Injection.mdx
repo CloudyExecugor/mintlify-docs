@@ -1,0 +1,23 @@
+---
+title: "Injection"
+description: "Inject to Client"
+---
+
+<Info>
+  You can skip that part, if you are only interested in internal Injection
+</Info>
+
+### Inject Button
+
+```csharp
+Api.External.inject();
+```
+
+### Sample Button event
+
+```csharp
+private void InjectButton_Click(object sender, EventArgs e)
+{
+    Api.External.inject(); // attach to client
+}
+```
