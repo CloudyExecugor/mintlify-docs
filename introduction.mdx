@@ -14,73 +14,26 @@ description: "Welcome to the Cloudy API documentation"
   alt="Hero Dark"
 />
 
-## Getting Started
+## Welcome to Cloudy API
 
-Before diving into Cloudy API features, make sure your environment is ready for development.
+Cloudy API is a powerful toolkit built to enhance your interaction with Roblox processes, offering seamless internal and external execution, auto-injection, and advanced functionality such as DLL loading and version compatibility checks.
 
-<CardGroup cols={2}>
-  <Card
-    title="Local Setup"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Set up your development environment locally for faster iteration and testing.
-  </Card>
-  <Card
-    title="Live Preview"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview all changes before publishing to keep your updates bug-free and clean.
-  </Card>
-</CardGroup>
+This API is designed for developers building custom tools, launchers, or executors, and integrates deeply with both Roblox and your own apps. It also includes built-in communication with a custom AI backend for real-time feedback and actions.
+
+## Key Features
+
+- 🔁 **Auto-injection** into Roblox processes  
+- 🧠 **Ai.Ask / AskAsync** methods for intelligent scripting support  
+- 🧩 **DLL Loader** support  
+- 📦 **Roblox version checking** and update handling  
+- 👤 **Avatar fetching and player info tools**  
+- 🔐 **Internal execution** via `Api.Internal.inject()` (Admin-only)  
+- 🧪 **External execution** for scripts, modules, and routines  
 
 ## Admin Privileges Required
 
-To use advanced features such as `Api.Internal.inject()`, your project **must** have Admin-level privileges.  
-This ensures the API can access required internal resources for injection, monitoring, and secure execution.
+To use certain internal methods like `Api.Internal.inject()`, your project **must** be granted Admin privileges. This allows the API to perform critical tasks like memory writing, process access, and other sensitive operations that are essential for internal injection.
 
-<CardGroup cols={1}>
-  <Card
-    title="Grant Admin Privileges"
-    icon="shield-halved"
-    href="/docs/setup/admin-access"
-  >
-    Learn how to enable Admin access on your project to unlock the full power of Cloudy API.
-  </Card>
-</CardGroup>
+If you don't have Admin access on the target environment, `Api.Internal` methods will not be available and will throw a permission error.
 
-## Personalize and Extend
-
-Now that your setup is ready, it's time to make the docs yours and build engaging developer experiences.
-
-<CardGroup cols={2}>
-  <Card
-    title="Style & Branding"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize the look and feel of your documentation to match your brand identity.
-  </Card>
-  <Card
-    title="Auto-Generated API"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Generate API endpoints automatically from your OpenAPI schema for faster integration.
-  </Card>
-  <Card
-    title="Use Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Enhance the developer experience with interactive components like accordions and callouts.
-  </Card>
-  <Card
-    title="Get Inspired"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Explore how top teams build and design world-class developer documentation.
-  </Card>
-</CardGroup>
+---
