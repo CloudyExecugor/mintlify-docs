@@ -27,6 +27,12 @@
               "Injection",
               "Execution"
             ]
+          },
+          {
+            "group": "Internal",
+            "pages": [
+              "injection",
+            ]
           }
         ]
       },
