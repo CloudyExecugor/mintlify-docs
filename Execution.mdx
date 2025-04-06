@@ -1,0 +1,35 @@
+---
+title: "Execution"
+description: "Execute a lua script"
+---
+
+<Info>
+  You can skip that part, if you are only interested in internal Injection
+</Info>
+
+### Execute Button
+
+```csharp
+Api.External.execute("string script");
+
+```
+
+### Sample Button event
+
+```csharp
+private void ExecuteButton_Click(object sender, EventArgs e) {
+	Api.External.execute("print('Hello, World')");
+}
+```
+
+<Warning>
+  its recommended to put richtextbox1.Text instead of a script.
+</Warning>
+
+```csharp
+private void ExecuteButton_Click(object sender, EventArgs e) {
+	Api.External.execute(richTextBox1.Text);
+}
+```
+
+While the name of the Editor **richTextBox1** is.
